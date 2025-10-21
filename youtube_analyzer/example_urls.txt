@@ -1,0 +1,8 @@
+# Example YouTube URLs for Collection Analysis
+# Lines starting with # are comments and will be ignored
+
+# Example: Tech Talks
+# https://www.youtube.com/watch?v=dQw4w9WgXcQ
+# https://www.youtube.com/watch?v=9bZkp7q19f0
+
+# Add your YouTube URLs below (one per line)

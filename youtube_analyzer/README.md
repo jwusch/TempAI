@@ -2,8 +2,20 @@
 
 A powerful Python tool to download and analyze YouTube videos using yt-dlp.
 
+## 🆕 NEW: Collection Analyzer
+
+**Analyze multiple videos at once!** Check out the new [Collection Analyzer](COLLECTION_ANALYZER.md) for:
+- 📊 Batch analysis of multiple videos
+- 🏆 Find top performers and trends
+- 📈 Engagement rate calculations
+- 🎨 Beautiful HTML dashboards
+- 📑 Export to Markdown, CSV, JSON
+
+[Read the Collection Analyzer Guide →](COLLECTION_ANALYZER.md)
+
 ## Features
 
+### Single Video Analysis
 - Extract detailed video metadata (title, description, views, likes, duration, etc.)
 - Download videos in best quality
 - Download audio only (MP3 format)
@@ -11,6 +23,13 @@ A powerful Python tool to download and analyze YouTube videos using yt-dlp.
 - Get transcript information
 - JSON output support for automation
 - Progress tracking during downloads
+
+### Collection Analysis (NEW!)
+- Analyze multiple videos in batch
+- Generate comparison reports
+- Create interactive dashboards
+- Export to multiple formats
+- Find patterns and insights
 
 ## Installation
 
