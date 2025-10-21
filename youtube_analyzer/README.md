@@ -75,10 +75,23 @@ python3 youtube_analyzer.py "https://www.youtube.com/watch?v=VIDEO_ID" --downloa
 python3 youtube_analyzer.py "https://www.youtube.com/watch?v=VIDEO_ID" --audio
 ```
 
-#### Get Transcript/Caption Information
+#### Get Full Transcript/Captions (NEW!)
 ```bash
+# Get English transcript
 python3 youtube_analyzer.py "https://www.youtube.com/watch?v=VIDEO_ID" --transcript
+
+# Get transcript in another language
+python3 youtube_analyzer.py "https://www.youtube.com/watch?v=VIDEO_ID" --transcript --lang es
+
+# Get transcript as JSON with timestamps
+python3 youtube_analyzer.py "https://www.youtube.com/watch?v=VIDEO_ID" --transcript --json
 ```
+
+The transcript feature now extracts the **full text** with:
+- Complete transcript text
+- Timestamped segments
+- Multiple language support
+- Automatic or manual captions
 
 #### Custom Output Directory
 ```bash
@@ -110,8 +123,9 @@ The script automatically:
 | `--info` | `-i` | Display video information only (default if no option specified) |
 | `--download` | `-d` | Download the video in best quality |
 | `--audio` | `-a` | Download audio only as MP3 |
-| `--transcript` | `-t` | Get transcript/caption information |
+| `--transcript` | `-t` | Extract full transcript/captions with text |
 | `--output DIR` | `-o DIR` | Specify output directory (default: downloads) |
+| `--lang CODE` | | Language code for transcript (default: en) |
 | `--json` | | Output in JSON format for scripting |
 
 ## Examples
