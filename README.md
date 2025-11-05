@@ -45,30 +45,57 @@ LLM (GPT/Claude/Llama) → Generate contextual answer
 Response with timestamps
 ```
 
+## Architecture
+
+This project uses a **100% local and free** technology stack:
+
+- **LLM**: Ollama + Llama 3.2 / Mistral (runs on your machine)
+- **Embeddings**: sentence-transformers (local, no API)
+- **Vector DB**: ChromaDB (embedded, no server)
+- **Framework**: LangChain
+- **UI**: Streamlit
+
+**Total monthly cost: $0.00** 🎉
+
+For detailed architecture documentation, see [ARCHITECTURE.md](ARCHITECTURE.md)
+
 ## Getting Started
 
-### Prerequisites
-- Python 3.7+
-- pip
+**Quick Setup (~15 minutes):**
 
-### Installation
-
-1. Clone the repository:
+1. Install Ollama (local LLM):
    ```bash
-   git clone <repository-url>
-   cd TempAI
+   # Linux
+   curl -fsSL https://ollama.ai/install.sh | sh
+
+   # macOS
+   brew install ollama
+
+   # Windows: Download from https://ollama.ai
    ```
 
-2. Set up the YouTube analyzer:
+2. Pull an LLM model:
    ```bash
-   cd youtube_analyzer
+   ollama pull llama3.2  # ~2GB download
+   ```
+
+3. Install Python dependencies:
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. Test the analyzer:
+4. Test the YouTube analyzer:
    ```bash
+   cd youtube_analyzer
    python3 youtube_analyzer.py "https://www.youtube.com/watch?v=VIDEO_ID" --info
    ```
+
+**For detailed setup instructions, see [SETUP.md](SETUP.md)**
+
+### System Requirements
+
+- **Minimum**: 8GB RAM, 15GB disk space, Python 3.9+
+- **Recommended**: 16GB RAM, GPU optional (speeds up inference)
 
 ## Development Roadmap
 
